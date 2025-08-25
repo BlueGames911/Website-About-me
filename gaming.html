@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaming - MC's page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+</head>
+<body>
+
+
+  <header class="header-bar py-2 shadow-sm">
+    <div class="container d-flex align-items-center justify-content-between">
+
+
+      <h1 class="m-0 page-title">MC's Gaming World</h1>
+
+
+      <div class="d-flex align-items-center">
+        <!-- Timer -->
+        <div class="text-end me-3">
+          <div id="top-timer" class="small timer-display">0:00</div>
+          <div id="timer-comment" class="small timer-comment" aria-live="polite"></div>
+        </div>
+
+        <!-- Dark mode button-->
+        <button class="btn btn-light darkModeBtn" id="darkToggle" aria-pressed="false">Turn Off The Lights</button>
+      </div>
+    </div>
+
+    <!-- Music Player (beneath the header row) -->
+    <div class="container text-center mt-3 mb-2">
+      <audio id="music-player" controls muted preload="metadata" class="audio-player">
+        <source src="assets/spotifydown.com - Menace.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </header>
+
+
+  <!-- Arrow Links -->
+  <nav class="d-flex justify-content-between align-items-center px-3 py-2 bg-secondary text-light">
+    <div class="d-flex align-items-center">
+      <a href="index.html" class="btn btn-light me-2 nav-arrow" aria-label="Back to home">⬅</a>
+      <span class="nav-label">Back to Home</span>
+    </div>
+    <div class="d-flex align-items-center">
+      <span class="nav-label me-2">Anime</span>
+      <a href="anime.html" class="btn btn-light nav-arrow" aria-label="Go to coding">➡</a>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <section id="Intro">
+      <p class="lead story">
+        Welcome to my gaming page! Here you'll find out what got me into gaming in the first place, why I still play, and what games are my favourite.
+      </p>
+    </section>
+
+    <section id="Origins" class="mt-4">
+      <h2 class="section-title">Origins</h2>
+
+      <div class="mini-box p-3 mb-3">
+        <figure class="mb-0">
+          <img src="assets/AC2.gif" alt="Assassin's Creed Brotherhood snippet" class="genre-gif img-fluid rounded shadow">
+        </figure>
+
+        <div class="mini-box-text">
+          <p class="story">
+            I was actually introduced to gaming by my uncle. I remember it like it was yesterday.
+            My uncle and I were very close, we spent a lot of time together. When I was living with him for a while
+            I found out he had a console which he and his wife played on often. The first game I saw him play (and the first he let me play) was
+            <strong>Assassin's Creed Brotherhood</strong>, and I instantly fell in love with it, and gaming as a whole.
+          </p>
+
+          <p class="story">
+            My favourite series of games is Assassin's Creed, with Street Fighter being a close second.
+            My uncle taught me how to play and I was instantly hooked, but when I had to go live with my parents again,
+            they didn’t have a console. <br>
+            All this happened when I was 6 by the way — yes,
+            <b>I was introduced to Assassin's Creed as a 6-year-old 😅</b>
+          </p>
+        </div>
+      </div>
+
+      <div class="mini-box p-3 mb-3">
+        <figure class="mb-0">
+          <img src="assets/Rugal.gif" alt="Rugal animation from King of Fighters 98" class="genre-gif img-fluid rounded shadow">
+          <figcaption class="small text-muted">I mean just look at him</figcaption>
+        </figure>
+
+        <div class="mini-box-text">
+          <p class="story">
+            Later, a friend introduced me to fighting games through <em>King of Fighters '98</em> on his phone.
+            We battled often using its Bluetooth netcode, and my favourite character quickly became Rugal.
+          </p>
+
+          <p class="story">
+            Gaming has always been a huge part of my life. From epic adventures to competitive matches, I enjoy every moment spent with a controller or keyboard in hand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Genres" class="mt-5">
+      <h2 class="section-title">What are my favourite Genres</h2>
+
+      <article class="mt-4">
+        <h3 class="genre-heading">1. FIGHTING GAMES</h3>
+        <div class="mini-box p-3 mb-3">
+          <figure class="mb-0">
+            <img src="assets/FightingGames.jpg" alt="popular fighting games" class="genre-gif large img-fluid rounded shadow">
+          </figure>
+          <div class="mini-box-text">
+            <p class="story">
+              Fighting games are amazing. They seem so simple yet are so complex in nature. The mechanics you have to learn,
+              neutral play, defense, attacking, even the combos, there's such a beautiful layer of complexity that lures me in to it.
+              My favourite fighting game is Street Fighter III 3rd Strike, a gem of a fighting game, especially complimented by evo moment 37.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="mt-4">
+        <h3 class="genre-heading">2. RPGs</h3>
+        <div class="mini-box p-3 mb-3">
+          <figure class="mb-0">
+            <img src="assets/RPGS.jpg" alt="Picture of Elden Ring" class="genre-gif large img-fluid rounded shadow">
+          </figure>
+          <div class="mini-box-text">
+            <p class="story">
+              RPGs will remain a staple of gaming. They always boast amazing story, insane worlds to uncover and explore, and my favourite, linear progression.
+              The facet that I can dictate how my character grows in strength over time is amazing. That being said, my favourite RPG is a whole different breed.
+              Dark Souls, the game I instantly fell in love with. There are 3 reasons I love this game; the overarching story is amazing; the world, all the bosses,
+              NPCs and the level up system; and finally, my favourite part of it, <b>THE DIFFICULTY</b>.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="mt-4">
+        <h3 class="genre-heading">3. Pokemon (Yes it deserves its own Genre)</h3>
+        <div class="mini-box p-3 mb-3">
+          <figure class="mb-0">
+            <img src="assets/PokemonOverworld.gif" alt="Pokemon Heart Gold overworld" class="genre-gif large img-fluid rounded shadow">
+            <figcaption class="small text-muted">Who remembers when your mons would follow you in the overworld</figcaption>
+          </figure>
+          <div class="mini-box-text">
+            <p class="story">
+              I never thought I would be one to like pokemon but it really grew on me. I discovered it when a friend on discord recommended it to me.
+              The game he recommended was <a href="https://pokemonrevolution.net" target="_blank" rel="noopener noreferrer">Pokemon Revolution Online</a>.
+              So the first Pokemon game i've ever played was an online MMO.
+              From there i learned the mechanics, the story, and just fell in love with it. I then started to play the DS games, starting with Pokemon White. Heart Gold has been my fave ever since.
+              And this leads me into:
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="mt-4">
+        <h3 class="genre-heading">4. 2D Pixel Art Games</h3>
+        <div class="mini-box p-3 mb-3">
+          <figure class="mb-0">
+            <img src="assets/2dPixelGames.avif" alt="2D Pixel Art example" class="genre-gif large img-fluid rounded shadow">
+          </figure>
+          <div class="mini-box-text">
+            <p class="story">
+              I wish I could put this at number one😅. When I say I <b>LOVE</b> 2D Pixel games, its a massive understatement. I do not know why,
+              but I just adore these games. They are so charming, nostalgic (Yes I know Im only 18) and so fun. Making a succesful 2D RPG is one of my biggest dreams.
+              (Spoiler to my final Project). From Pokemon to <a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank" rel="noopener noreferrer">Stardew Valley</a>
+              to <a href="https://store.steampowered.com/app/943140/Sparklite/" target="_blank" rel="noopener noreferrer">SparkLite</a> and <a href="https://store.steampowered.com/app/1337520/Risk_of_Rain_Returns/" target="_blank" rel="noopener noreferrer">Risk Of Rain Returns</a>.
+              These games are golden and hold special places in my heart, I guess Street Fighter III 3rd Strike can get a spot here too. If I were only play one type of game my whole life,
+              I would pick 2D Pixel games.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="FavoriteGames" class="mt-5">
+      <h2 class="section-title">Favorite Games</h2>
+
+      <table class="table table-bordered table-hover align-middle">
+        <thead class="table-dark">
+          <tr><th>Game</th><th>Genre</th><th>Why I Love It</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <h4>Street Fighter III: 3rd Strike</h4>
+              <figure class="figure d-flex align-items-center mb-0">
+                <img src="assets/DaigoParry.gif" alt="Daigo Parry" class="genre-gif">
+              </figure>
+            </td>
+            <td>Fighting</td>
+            <td>This game is just the best fighting game in history — this GIF speaks for itself!</td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Dark Souls 3</h4>
+              <figure class="figure d-flex align-items-center mb-0">
+                <img src="assets/abyss-watchers-dark-souls-3.gif" alt="Boss fight from Dark souls 3" class="genre-gif">
+              </figure>
+            </td>
+            <td>RPG</td>
+            <td text-wrap: balance>Wow this game is just legendary, its sad that its the last game of the series, from walking into Fire link shrine for the second time since dark souls one
+               to fighting the abyss watchers, this game is just legendary. Its honestly one of the best games Ive ever played, though I havent played elden ring so I guess thats a factor.</td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Minecraft</h4>
+              <figure class="figure d-flex align-items-center mb-0">
+                <img src="assets/Minecraft.gif" alt="GIF of minecraft with shaders on" class="genre-gif">
+              </figure>
+            </td>
+            <td> SandBox RPG</td>
+            <td>I dont think anyone is surprised by this, this game has becoem quite the staple in the indusrty, the game where you are onl ylimited by your imagination
+                Its quite fun and relaxing, especially if you are a creative person. 
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h4>Stardew Valley</h4>
+              <figure class="figure d-flex align-items-center mb-0">
+                <img src="assets/Stardew Valley.gif" alt="GIF of stardew valley" class="genre-gif">
+              </figure>
+            </td>
+            <td> 2D Pixel Farming</td>
+            <td>Remember what I said about 2D pixel Games? Yeah everything applies to this game, its amazing.
+                Surprisingly, though its a simple concept, its done amazingly, and this game is one of my biggest inspirations to become a game developer.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer class="text-center py-3 bg-dark text-light mt-4">
+    <time id="timer" class="d-block mt-2">0:00</time>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

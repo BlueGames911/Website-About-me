@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Webpage</title>
+</head>
+<body>
+
+    
+
+    <header class="header-bar py-2 shadow-sm">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h1 class="m-0 page-title">MC Welcomes You</h1>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-light darkModeBtn" id="darkToggle" aria-pressed="false">Turn Off The Lights</button>
+            </div>
+        </div>
+        <nav class="d-flex justify-content-end align-items-center px-3 py-2">
+            <a href="gaming.html" class="btn btn-light nav-arrow" aria-label="Go to gaming">➡</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="card shadow-sm mb-4 p-3 intro-card">
+            <p class="mini-box-text">Welcome to my humble homepage, feel free to explore a bit, I put quite a bit of effort into this😋</p>
+            <h2>Short Intro: </h2>
+            <p>
+                Hey, I'm MC TheOne, my real name is Munashe, but that's way too African so it won't make an appearance here today 😅
+                Call me Nash instead.
+                I'm an 18 year old gamer and fellow (wannabe) programmer XD, and quite the massive fan of anime.
+                I have way too few hobbies so I'll over emphasize the ones I do have 😊.
+            </p>
+        </div>
+
+        <h3>Things I love doing the most</h3>
+        <div class="row g-4" id="Hobbies">
+            <div class="col-md-4">
+                <div class="lang-table card h-100 shadow-sm border-primary text-center p-3">
+                    <div class="lang-logo-row mb-2">
+                        <img src="assets/evo-moment-37-example1.png" class="lang-logo mx-auto d-block" alt="Gaming">
+                    </div>
+                    <h5 class="card-title mb-2"><a href="gaming.html">Gaming</a></h5>
+                    <div class="card-text story mb-0 text-start">
+                        I love playing all sorts of games, from fighting games to RPGs. Gaming is my favorite way to relax and challenge myself.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="lang-table card h-100 shadow-sm border-secondary text-center p-3">
+                    <div class="lang-logo-row mb-2">
+                        <img src="assets/maxresdefault.jpg" class="lang-logo mx-auto d-block" alt="Coding">
+                    </div>
+                    <h5 class="card-title mb-2"><a href="codingBackground.html">Coding</a></h5>
+                    <div class="card-text story mb-0 text-start">
+                        Coding is one of the funnest things I do, its so self challenging and rewarding, not to mention its in demanidng.
+                        The logic coding needs, its like a science, which it actually is lol
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="lang-table card h-100 shadow-sm border-warning text-center p-3">
+                    <div class="lang-logo-row mb-2">
+                        <img src="assets/dark-deku.gif" class="lang-logo mx-auto d-block" alt="Anime">
+                    </div>
+                    <h5 class="card-title mb-2"><a href="anime.html">Anime</a></h5>
+                    <div class="card-text story mb-0 text-start">
+                        Anime, just one of the best genres of all time. There's so much peak entertainment to uncover from this genre, its insane.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>
+            I look forward to your time on my Homepage where you can learn quite a few things about me.
+            I tend to go in depth.
+        </p>
+    </main>
+
+    <!-- Timer -->
+    <footer class="text-center py-3 bg-dark text-light mt-4" style="background: #494949;">
+        <time id="timer" class="d-block mt-2">0:00</time>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

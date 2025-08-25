@@ -1,0 +1,202 @@
+/*.header {
+    background-color: #477bff;
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: background-color 0.25s;
+}
+
+.header:hover
+{
+    background-color: blue;
+}
+No longer using this header*/
+:root{
+  --page-bg: #f8f9fa;
+  --text: #111;
+  --muted: #6c757d;
+  --accent: #2f7bd9;
+  --box-bg: #fff;
+  --border: #000;
+}
+
+/* transitions for theme changes, if this even worked, I cant tell */
+* { transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; }
+
+body{
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: "Montserrat", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+
+
+.header-bar{
+  background: #494949;
+  color: #fff;
+  padding-top: .6rem;
+  padding-bottom: .6rem;
+}
+.page-title {
+    color: var(--accent);
+    font-size: 1.9rem;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    pointer-events: none; /*So you can press the buton multiple times*/
+    z-index: 1;
+}
+.header-bar .container {
+    position: relative;
+}
+
+/* Make buttons */
+.header-bar .btn { color: #111; background: #fff; border-color: #ddd; }
+
+/* Top timer */
+.timer-display { font-weight:700; color: #fff; background:#212529; padding:4px 8px; border-radius:6px; display:inline-block; }
+.timer-comment { 
+    color: #fff !important; /* Force white text */
+}
+
+/* Audio */
+.audio-player{ max-width:720px; width:100%; }
+
+/*Intro block used in the homepage*/
+.intro-card {
+  background: var(--box-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark-mode .intro-card {
+  background: var(--box-bg);
+  color: var(--text);
+}
+
+/* Mini-box grid with images centered left, text will be on the right*/
+.mini-box{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--box-bg);
+}
+.mini-box figure{ margin:0; padding-right: 1rem; border-right: 1px solid var(--border); }
+.mini-box .mini-box-text{ padding-left:1rem; }
+
+/* For small screens*/
+@media (max-width:767px){
+  .mini-box{ grid-template-columns: 1fr; }
+  .mini-box figure{ border-right: none; padding-right:0; margin-bottom:.75rem; }
+}
+
+/* Images and GIFs */
+.genre-img.small{ max-height:100px; width:auto; object-fit:cover; border-radius:8px; box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+.genre-gif{ max-height:240px; width:auto; object-fit:cover; border-radius:8px; box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+.genre-gif.large{ max-height:300px; }
+.game-thumb{ max-height:120px; width:auto; object-fit:cover; }
+
+/* Table and text */
+.section-title{ font-size:1.4rem; margin-top:1rem; }
+.story{ font-size:1.05rem; margin-bottom:1rem; font-family: "Open Sans", sans-serif; line-height:1.6; }
+
+/* Arrow Links */
+.nav-label{ font-weight:600; color:#f8f9fa; }
+
+/* Dark mode settings*/
+html.dark-mode{
+  --page-bg: #202124;    /* page background dark */
+  --text: #f3f4f6;
+  --muted: #c0c0c0;
+  --accent: #66a8ff;
+  --box-bg: #161616;
+  --border: #fff;
+}
+
+
+html.dark-mode body{ background: var(--page-bg); color: var(--text); }
+
+/* Make header buttons adapt in dark mode */
+html.dark-mode .header-bar .btn{ color: var(--text); background: transparent; border-color: var(--text); }
+
+/* Dark-mode tweaks for boxes/tables */
+html.dark-mode .mini-box{ background: var(--box-bg); border-color: var(--border); }
+html.dark-mode .table{ background: var(--box-bg); color: var(--text); }
+html.dark-mode .table thead.table-dark th{ background:#222; color: var(--text); }
+
+.Captions {
+    color: #3e3f41;
+}
+html.dark-mode .Captions {
+    color: #ffffff;
+}
+
+/* small responsive */
+@media (max-width:767px){
+  .genre-gif.large{ max-height:160px; }
+  .game-thumb{ max-height:90px; }
+  .page-title{ font-size:1.6rem; }
+}
+
+#Languages .card, #Goals .card {
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+#Languages img, #Goals img {
+    background: #fff;
+    padding: 4px;
+}
+
+/* Language table card style */
+.lang-table {
+    background: var(--box-bg);
+    border-radius: 1rem;
+    border-width: 2px;
+    margin-bottom: 1.5rem;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.lang-logo-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lang-logo {
+    max-height: 80px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+    padding: 6px;
+}
+
+/* Dark mode for language and goals cards */
+html.dark-mode .lang-table,
+html.dark-mode #Goals .card {
+    background: var(--box-bg);
+    color: var(--text);
+    border-color: var(--border);
+}
+html.dark-mode .lang-logo {
+    background: #232323;
+}
+
+/* List group dark mode for goals */
+html.dark-mode .list-group-item {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border);
+}
